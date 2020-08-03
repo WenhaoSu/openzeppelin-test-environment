@@ -28,7 +28,7 @@ function setupServer(nodeOptions: NodeOptions, serverType = 'ganache-core'): any
 }
 
 process.once('message', async (options: NodeOptions) => {
-  const server = await setupServer(options, 'ganache-core');
+  const server = await setupServer(options, 'firefly');
 
   // An undefined port number makes ganache-core choose a random free port,
   // which plays nicely with environments such as jest and ava, where multiple
